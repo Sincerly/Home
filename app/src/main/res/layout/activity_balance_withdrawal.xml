@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:text="提现账户:"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/accountPicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_16"
+            android:drawableLeft="@mipmap/icon_pay_alipay"
+            android:drawableRight="@mipmap/icon_light_gray_down"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="支付宝账户"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_f2f2f2" />
+
+    <LinearLayout
+        android:id="@+id/alipay"
+
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:text="提现账号:"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@null"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:hint="请输入支付宝账号"
+            android:textColor="@color/color_282828"
+            android:textColorHint="@color/color_989898"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bankLayout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:text="到账银行卡:"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <!--绑定的有银行卡-->
+            <LinearLayout
+                android:id="@+id/bindLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/bankImage"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/temp_shop" />
+
+                <TextView
+                    android:id="@+id/bankInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/temp_shop"
+                    android:text="中国银行储蓄卡（5263）"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <!--未绑定银行卡-->
+            <LinearLayout
+                android:id="@+id/unbind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="您还未添加银行卡，"
+                    android:textColor="@color/color_989898"
+                    android:textSize="@dimen/sp_12" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="点击添加"
+                    android:textColor="@color/theme_blue_color"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:text="提现金额"
+            android:textColor="@color/color_686868"
+            android:textSize="@dimen/sp_15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="¥"
+                android:textColor="@color/color_e70d0d"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@null"
+                android:gravity="bottom"
+                android:inputType="numberDecimal"
+                android:maxWidth="150dp"
+                android:minWidth="@dimen/dp_40"
+                android:text=""
+                android:textColor="@color/color_e70d0d"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/dp_10">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/allMoney"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:background="@null"
+                android:hint=","
+                android:textColor="@color/color_989898"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text="全部提现"
+                android:textColor="@color/theme_blue_color"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_72"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_29"
+        android:background="@drawable/bg_shape_theme_color_r24"
+        android:text="提现"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

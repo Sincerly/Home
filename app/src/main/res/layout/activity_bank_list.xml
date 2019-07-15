@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/t"
+        layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t">
+        <include layout="@layout/include_list" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_29"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_45"
+        android:background="@drawable/bg_shape_theme_color_r24"
+        android:text="新增银行卡"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16" />
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/t"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/dp_24"
+        android:layout_height="wrap_content">
+        <include layout="@layout/view_add_bank"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

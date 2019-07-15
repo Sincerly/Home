@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp_16"
+    android:gravity="center_vertical"
+    android:layout_marginTop="@dimen/dp_10"
+    android:orientation="horizontal">
+
+    <com.ysxsoft.common_base.view.custom.image.RoundImageView
+        android:id="@+id/pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/temp_shop"
+        app:radius="@dimen/dp_5" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="休闲零食碧根果300g"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/ruleName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/priceTips"
+            app:layout_constraintTop_toBottomOf="@id/ruleName"
+            app:layout_constraintLeft_toLeftOf="@id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"
+            android:textColor="@color/color_e70d0d"
+            android:textSize="@dimen/sp_14" />
+        <TextView
+            android:id="@+id/price"
+            app:layout_constraintTop_toBottomOf="@id/ruleName"
+            app:layout_constraintLeft_toRightOf="@id/priceTips"
+            app:layout_constraintBottom_toBottomOf="@id/priceTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15.00"
+            android:textColor="@color/color_e70d0d"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:text="x1"
+            android:textColor="@color/color_333333"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/priceTips"
+            android:layout_height="wrap_content" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

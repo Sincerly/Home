@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bg"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="?android:attr/actionBarSize">
+
+                    <TextView
+                        android:id="@+id/backWithText"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:drawableLeft="@mipmap/icon_gray_back"
+                        android:text="返回上一步"
+                        android:visibility="gone"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/color_686868"
+                        android:textSize="@dimen/sp_14" />
+
+                    <LinearLayout
+                        android:id="@+id/backLayout"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="?android:attr/actionBarSize"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_white_back" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/color_282828"
+                        android:textSize="@dimen/sp_18" />
+
+                    <!--中间两个Tab-->
+                    <LinearLayout
+                        android:id="@+id/customCenterTabView"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/rightWithIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?android:attr/actionBarSize"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_16"
+                        android:paddingRight="@dimen/dp_16"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text=""
+                        android:textColor="@color/color_686868"
+                        android:textSize="@dimen/sp_14" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/bottomLineView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1" android:background="@color/color_spacing"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefresh"
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottomLayout"
+        android:layout_below="@id/t"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!--评论-->
+    <LinearLayout
+        android:outlineAmbientShadowColor="@color/color_4955F3"
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_4">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="187dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_e0e0e0_radius_16"
+            android:drawableLeft="@mipmap/icon_bottom_edit"
+            android:drawablePadding="@dimen/dp_8"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="在这里写下精彩评论~"
+            android:paddingLeft="@dimen/dp_8"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_12" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="64dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:background="@drawable/bg_theme_radius_16"
+            android:enabled="false"
+            android:text="发送"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+</RelativeLayout>

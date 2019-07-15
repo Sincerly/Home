@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menu1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@mipmap/icon_go"
+            android:drawablePadding="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_16"
+            android:text="意见反馈"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" android:background="@color/color_f2f2f2"/>
+        <TextView
+            android:id="@+id/menu2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@mipmap/icon_go"
+            android:drawablePadding="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_16"
+            android:text="支付密码设置"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" android:background="@color/color_f2f2f2"/>
+        <TextView
+            android:id="@+id/menu3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@mipmap/icon_go"
+            android:drawablePadding="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_16"
+            android:text="登录密码设置"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" android:background="@color/color_f2f2f2"/>
+        <TextView
+            android:id="@+id/menu4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@mipmap/icon_go"
+            android:drawablePadding="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_16"
+            android:text="版本更新"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="@drawable/bg_shape_theme_color_r24"
+        android:text="退出登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="提现申请已提交"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color_333333"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:src="@mipmap/icon_ti_xian_success"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="预计到账时间："
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_282828"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:text="2017-03-15 15:53:30"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_282828"
+            android:layout_height="wrap_content" />
+    </LinearLayout> <LinearLayout
+        android:layout_width="300dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+    android:layout_marginVertical="@dimen/dp_10"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="提现金额："
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_282828"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:text="￥88.88"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/color_e70d0d"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_72"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_shape_theme_color_r24"
+        android:text="完成"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

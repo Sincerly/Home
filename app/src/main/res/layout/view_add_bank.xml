@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="@dimen/dp_24"
+    android:layout_marginRight="@dimen/dp_24"
+    android:layout_marginBottom="@dimen/dp_24">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:drawableLeft="@mipmap/icon_bank_edit"
+        android:text="请添加银行卡"
+        android:gravity="center"
+        android:drawablePadding="@dimen/dp_8"
+        android:layout_gravity="center"
+        android:textColor="@color/color_686868"
+        android:textSize="@dimen/sp_15" />
+</android.support.v7.widget.CardView>

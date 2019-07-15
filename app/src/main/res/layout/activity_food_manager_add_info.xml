@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="@dimen/dp_40"
+                android:layout_height="wrap_content">
+                <com.ysxsoft.common_base.view.custom.image.CircleImageView
+                    android:layout_width="77dp"
+                    android:src="@mipmap/icon_food_logo"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:layout_height="77dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/icon_food_small_camera"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="上传头像"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:textColor="@color/color_989898"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+
+            <!--商家类型-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:ems="5"
+                    android:text="商家类型:"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_15" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="美食"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/color_282828"
+                    android:textColorHint="@color/color_989898"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+            <!--店铺名称-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:ems="5"
+                    android:text="店铺名称:"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_15" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/dpmc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入店铺名称"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/color_282828"
+                    android:textColorHint="@color/color_989898"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+            <View
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+
+
+            <!--营业时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:ems="5"
+                    android:text="营业时间:"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_15" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/timePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableRight="@mipmap/icon_light_gray_down"
+                    android:gravity="center_vertical"
+                    android:hint="请选择营业时间"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/color_282828"
+                    android:textColorHint="@color/color_989898"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+            <!--姓名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:ems="5"
+                    android:text="姓名:"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_15" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入姓名"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/color_282828"
+                    android:textColorHint="@color/color_989898"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+            <View
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:ems="5"
+                    android:text="手机号:"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_15" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入手机号"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/color_282828"
+                    android:textColorHint="@color/color_989898"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+            <View
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:ems="5"
+                    android:text="地址:"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_15" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/addressPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableRight="@mipmap/icon_light_gray_down"
+                    android:gravity="center_vertical"
+                    android:hint="请选择地址"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/color_282828"
+                    android:textColorHint="@color/color_989898"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+            <!--详细地址-->
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:ems="5"
+                android:text="详细地址:"
+                android:textColor="@color/color_282828"
+                android:textSize="@dimen/sp_15" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/addressDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入详细地址"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/color_282828"
+                android:textColorHint="@color/color_989898"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+            <View
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingVertical="@dimen/dp_16"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:ems="5"
+                    android:text="门头照:"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_15" />
+                <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                    android:id="@+id/nickPhotoLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_16"
+                    app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                    app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                    app:bga_snpl_editable="true"
+                    app:bga_snpl_itemCornerRadius="0dp"
+                    app:bga_snpl_itemSpanCount="3"
+                    app:bga_snpl_itemWhiteSpacing="@dimen/dp_5"
+                    app:bga_snpl_itemWidth="76dp"
+                    app:bga_snpl_maxItemCount="1"
+                    app:bga_snpl_otherWhiteSpacing="30dp"
+                    app:bga_snpl_plusDrawable="@mipmap/icon_fabu_add"
+                    app:bga_snpl_plusEnable="true"
+                    app:bga_snpl_sortable="true"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请上传门头照"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/color_282828"
+                    android:textColorHint="@color/color_989898"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+            <View
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingVertical="@dimen/dp_16"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:ems="5"
+                    android:text="营业执照:"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_15" />
+                <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                    android:id="@+id/nickPhotoLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_16"
+                    app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                    app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                    app:bga_snpl_editable="true"
+                    app:bga_snpl_itemCornerRadius="0dp"
+                    app:bga_snpl_itemSpanCount="3"
+                    app:bga_snpl_itemWhiteSpacing="@dimen/dp_5"
+                    app:bga_snpl_itemWidth="76dp"
+                    app:bga_snpl_maxItemCount="1"
+                    app:bga_snpl_otherWhiteSpacing="30dp"
+                    app:bga_snpl_plusDrawable="@mipmap/icon_fabu_add"
+                    app:bga_snpl_plusEnable="true"
+                    app:bga_snpl_sortable="true"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请上传营业执照"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/color_282828"
+                    android:textColorHint="@color/color_989898"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingVertical="@dimen/dp_16"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:ems="5"
+                    android:text="图片集:"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_15" />
+                <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                    android:id="@+id/nickPhotoLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_16"
+                    app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                    app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                    app:bga_snpl_editable="true"
+                    app:bga_snpl_itemCornerRadius="0dp"
+                    app:bga_snpl_itemSpanCount="3"
+                    app:bga_snpl_itemWhiteSpacing="@dimen/dp_5"
+                    app:bga_snpl_itemWidth="76dp"
+                    app:bga_snpl_maxItemCount="1"
+                    app:bga_snpl_otherWhiteSpacing="30dp"
+                    app:bga_snpl_plusDrawable="@mipmap/icon_fabu_add"
+                    app:bga_snpl_plusEnable="true"
+                    app:bga_snpl_sortable="true"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请上传图片集"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/color_282828"
+                    android:textColorHint="@color/color_989898"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/color_f2f2f2" />
+            <Button
+                android:id="@+id/submit"
+                style="@style/BtnRoundThemeBlue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"
+                android:layout_marginBottom="@dimen/dp_44"
+                android:text="提交" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>

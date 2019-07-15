@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="ysxsoft_prediction"></dbname>
+    <version value="7"></version>
+    <list>
+        <mapping class="com.ysxsoft.home.orm.ShopCart"></mapping>
+        <mapping class="com.ysxsoft.home.orm.SearchHistory"></mapping>
+    </list>
+</litepal>

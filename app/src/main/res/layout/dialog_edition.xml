@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/dp_16"
+    app:cardPreventCornerOverlap="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_edition" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="@dimen/dp_44"
+            android:layout_marginBottom="@dimen/dp_24"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:text="您已是最新版本"
+                android:textColor="#282828"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="v1.01.01"
+                android:textColor="@color/color_989898"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_f2f2f2" />
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="match_parent"
+            android:text="我知道了~"
+            android:textColor="@color/theme_blue_color"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:background="@drawable/bg_white_left_bottom_radius_16"
+            android:layout_height="@dimen/dp_44" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

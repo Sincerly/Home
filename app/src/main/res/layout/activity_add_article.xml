@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/bg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/statusBar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="?android:attr/actionBarSize">
+                <TextView
+                    android:id="@+id/backWithText"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:drawableLeft="@mipmap/icon_gray_back"
+                    android:text="返回上一步"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_686868"
+                    android:textSize="@dimen/sp_14" />
+
+                <LinearLayout
+                    android:id="@+id/backLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_white_back" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="发帖"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/color_282828"
+                    android:textSize="@dimen/sp_18" />
+
+                <!--中间两个Tab-->
+                <LinearLayout
+                    android:id="@+id/customCenterTabView"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rightWithIcon"
+                    android:background="@drawable/bg_shape_theme_color_r24"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:paddingTop="0dp"
+                    android:text="发布"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/bottomLineView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" android:background="@color/color_spacing"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:ems="5"
+                android:text="帖子类目："
+                android:textColor="@color/color_282828"
+                android:textSize="@dimen/sp_15" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/typePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@mipmap/icon_light_gray_down"
+                android:gravity="center_vertical"
+                android:hint="请选择帖子类目"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/color_282828"
+                android:textColorHint="@color/color_989898"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+        <View
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" android:background="@color/color_spacing"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:ems="5"
+                android:text="添加标题："
+                android:textColor="@color/color_282828"
+                android:textSize="@dimen/sp_15" />
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/articleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请添加帖子标题"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/color_282828"
+                android:textColorHint="@color/color_989898"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" android:background="@color/color_spacing"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:ems="5"
+                android:text="城市:"
+                android:textColor="@color/color_282828"
+                android:textSize="@dimen/sp_15" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/citySelectPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@mipmap/icon_light_gray_down"
+                android:gravity="center_vertical"
+                android:hint="请选择城市"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/color_282828"
+                android:textColorHint="@color/color_989898"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+        <View
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" android:background="@color/color_spacing"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/articleContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:minLines="5"
+                android:paddingHorizontal="@dimen/dp_16"
+                android:paddingVertical="@dimen/dp_10"
+                android:gravity="top"
+                android:hint="编辑内容"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_16"
+                android:textColor="@color/color_282828"
+                android:textColorHint="@color/color_989898"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_margin="@dimen/dp_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

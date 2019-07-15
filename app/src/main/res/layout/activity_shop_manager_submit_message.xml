@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <EditText
+           android:gravity="top"
+            android:padding="@dimen/dp_16"
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:hint="请输入拒绝原因"
+            android:text=""
+            android:textColor="@color/color_282828"
+            android:autoSizeStepGranularity="@dimen/sp_14"
+            android:textColorHint="@color/color_989898"
+            android:textSize="@dimen/sp_14" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/BtnRoundThemeBlue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_44"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_44"
+        android:text="发布" />
+</LinearLayout>

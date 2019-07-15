@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_marginBottom="@dimen/dp_14"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/dp_10">
+
+                <com.ysxsoft.common_base.view.custom.image.CircleImageView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:src="@mipmap/icon_logo" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="家官方  26分钟前"
+                    android:textColor="@color/color_686868"
+                    android:layout_weight="1"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:text="编辑"
+                    android:textColor="@color/theme_blue_color"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_4"
+                android:src="@mipmap/icon_country_logo" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16"
+        android:maxLines="4"
+        android:text="郑州明日起气温显著回升，周末高温22℃或提早一周如春"
+        android:textColor="@color/color_282828"
+        android:textSize="@dimen/sp_13" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16"
+        android:orientation="horizontal">
+
+        <com.ysxsoft.home.view.NineImageView
+            android:id="@+id/photoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bga_snpl_itemCornerRadius="0dp"
+            app:bga_snpl_itemSpanCount="3"
+            app:bga_npl_itemWhiteSpacing="@dimen/dp_4"
+            app:bga_snpl_maxItemCount="9"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@color/color_f2f2f2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_14"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/bg_like"
+            android:textColor="@color/country_text_color"
+            android:textSize="11sp"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="100" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_1"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/say"
+            android:text="66"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableLeft="@mipmap/icon_say"
+            android:textColor="@color/color_686868"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:src="@mipmap/temp_banner"
+        android:scaleType="fitXY"
+        android:layout_width="76dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="76dp" />
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/icon_info_delete"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>

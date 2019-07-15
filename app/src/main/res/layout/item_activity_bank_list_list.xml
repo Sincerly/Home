@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_12"
+    android:layout_height="wrap_content"
+   >
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_bank_bg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_24"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bankName"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国银行"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/bankUserName"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="葛大彬"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/bankNo"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9784563214747896541"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edit"
+        app:layout_constraintTop_toTopOf="@id/bg"
+        app:layout_constraintRight_toRightOf="@id/bg"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_edit_bank"
+        android:text="编辑"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_15" />
+</android.support.constraint.ConstraintLayout>

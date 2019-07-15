@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menu1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@mipmap/icon_info_menu1"
+            android:drawableRight="@mipmap/icon_go"
+            android:drawablePadding="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_16"
+            android:text="订单"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" android:background="@color/color_f2f2f2"/>
+        <TextView
+            android:id="@+id/menu2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="?android:attr/selectableItemBackground"
+
+            android:drawableLeft="@mipmap/icon_info_menu2"
+            android:drawableRight="@mipmap/icon_go"
+            android:drawablePadding="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_16"
+            android:text="我的求职"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" android:background="@color/color_f2f2f2"/>
+        <TextView
+            android:id="@+id/menu3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="?android:attr/selectableItemBackground"
+
+            android:drawableLeft="@mipmap/icon_info_menu3"
+            android:drawableRight="@mipmap/icon_go"
+            android:drawablePadding="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_16"
+            android:text="人找车"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" android:background="@color/color_f2f2f2"/>
+        <TextView
+            android:id="@+id/menu4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@mipmap/icon_info_menu4"
+            android:drawableRight="@mipmap/icon_go"
+            android:drawablePadding="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_16"
+            android:text="我的帖子"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+</LinearLayout>

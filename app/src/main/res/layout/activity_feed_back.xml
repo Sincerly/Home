@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/color_f2f2f2"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content">
+        <include layout="@layout/include_title"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/dp_5"
+        android:layout_margin="@dimen/dp_16"
+
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:minHeight="250dp"
+            android:background="@color/colorWhite"
+            android:minLines="9"
+            android:gravity="top"
+            android:textSize="@dimen/sp_14"
+            android:padding="@dimen/dp_16"
+            android:textColor="@color/color_282828"
+            android:textColorHint="@color/color_666666"
+            android:hint="在这里留下您的宝贵意见..."
+            android:maxLength="200"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/contentNum"
+            android:layout_width="wrap_content"
+            android:text="0/200"
+            android:textColor="@color/color_989898"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="@drawable/bg_shape_theme_color_r24"
+        android:text="提交"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>
